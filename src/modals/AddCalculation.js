@@ -290,7 +290,7 @@ export default function AddCalculation(props){
                                 shrink: true,
                             }}
                         />
-                        <p>Energy: {(value*(new Date(endDate).getTime() - new Date(startDate).getTime())/1000).toFixed(2)} W.s = {((value*(new Date(endDate).getTime() - new Date(startDate).getTime())/1000)/3.6e6)} kwh</p>
+                        <p>Energy: {(value*(new Date(endDate).getTime() - new Date(startDate).getTime())/1000).toFixed(2)} J = {((value*(new Date(endDate).getTime() - new Date(startDate).getTime())/1000)/3.6e6)} kWh</p>
                         <p>Price: {(((value*(new Date(endDate).getTime() - new Date(startDate).getTime())/1000)/3.6e6)*tax)}€</p>
                     </>
                 ) : parameter === 'brightness' ? (
